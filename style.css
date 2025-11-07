@@ -51,10 +51,11 @@
     padding: 10px;
 }
 .logo{
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #00f7ff;
 }
 
 .navbar{
@@ -155,8 +156,12 @@
 }
 
 .homes h2{
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #141616;
+    text-shadow: 0 4px 8px rgba(7, 194, 207, 0.801);
 }
 
 .homes-grid{
@@ -173,9 +178,9 @@
 }
 
 .homes-card{
-    background-color: rgba(189, 241, 241, 0.945);
+    background-color: black;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.733);
     padding: 10px;
     width: 100%;
     max-width: 300px;
@@ -184,21 +189,28 @@
 
 .homes-card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.568);
+}
+
+.homes-card img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .homes-card h3{
     font-size: 1.2rem;
     margin-bottom: 5px;
+    color: #00f7ff;
 }
 
 .homes-card p {
     font-size: 1rem;
     margin-bottom: 5px;
+    color: aquamarine;
 }
 
 .details{
-    background-color: black;
+    background-color: rgba(44, 227, 252, 0.281);
     color:aliceblue;
     padding: 0.5rem 1rem;
     border: none;
@@ -208,5 +220,13 @@
 }
 
 .details:hover{
-    background-color: rgba(0, 0, 0, 0.219);
+    background-color: rgba(18, 156, 236, 0.897);
+}
+
+.footer{
+    background-color: black;
+    color: #00f7ff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
 }
