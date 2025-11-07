@@ -1,20 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
 .body{
-    background-color: rgba(19, 19, 19, 0.301);
+    background-color: rgba(32, 30, 30, 0.295);
     text-align: center;
-
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
 }
 .header{
-    background-color: rgba(5, 107, 175, 0.61);
+    background-color: rgba(8, 8, 8, 0.952);
     padding: 5px;
     text-align: center;
     border-radius: 5px;
 }
-.header li{
-    list-style: none;
-    display: inline;
-    padding: 10px;
     
-}
 .login-box{
     background-color: rgba(74, 184, 184, 0.089);
     width: 300px;
@@ -55,20 +56,157 @@
     height: 40px;
     border-radius: 50%;
 }
-.nav-box{
+
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 15px;
+    position: sticky;
+    z-index: 10;
+}
+
+.nav-links{
+    gap: 20px;
+    display: flex;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:aliceblue;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color:rgb(137, 197, 250)
+}
+
+.welcome{
+    background-color: rgb(95, 94, 94);
+    padding: 10px;
+}
+
+.welcome h1{
+    color:rgb(124, 235, 235);
+}
+
+.welcome p{
+    color:rgb(124, 235, 235);
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search-box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 5px;
+    background-color: rgb(124, 235, 235);
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.733);
+    transition: all 0.3s ease;
+    width: 90%;
+    max-width: 500px;
+}
+
+.search-box input{
+    flex:1;
+    border: none;
+    outline: none;
+    font-size:16px;
+    padding: 8px;
+    background: transparent;
+}
+
+.search-box:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.788);
+}
+
+.search-icon {
+  color: #0c0b0b;
+  font-size: 18px;
+}
+
+.search-box select {
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    outline: none;
+    background-color: rgba(189, 241, 241, 0.945);
+}
+
+.search-box select:hover {
+  background: rgba(32, 30, 30, 0.295);
+}
+
+.homes{
+    text-align: center;
+    padding: 15px;
+}
+
+.homes h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.homes-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+@media screen and (max-width:600px){
+    .homes-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.homes-card{
+    background-color: rgba(189, 241, 241, 0.945);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+
+.homes-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
-nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+
+.homes-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.homes-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.details{
+    background-color: black;
+    color:aliceblue;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.details:hover{
+    background-color: rgba(0, 0, 0, 0.219);
 }
