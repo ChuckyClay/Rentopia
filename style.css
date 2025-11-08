@@ -9,6 +9,7 @@
     font-family: "Poppins", sans-serif;
     line-height: 1.6;
 }
+
 .header{
     background-color: rgba(8, 8, 8, 0.952);
     padding: 5px;
@@ -229,4 +230,125 @@
     font-size: 20px;
     padding: 10px;
     margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+}
+.footer2{
+    background-color: black;
+    color: #00f7ff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.image-gallery {
+    max-width: 900px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-thumbnails {
+    display: flex;
+    transition: transform 1.3s ease;
+    gap: 10px;
+}
+
+.image-thumbnails img {
+    width: 100%;
+    max-width: 950px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(16, 16, 15, 0.9);
+    color: #fff;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.description h2{
+    color: #090909;
+    text-shadow: #21cfdf 0 3px 6px;
+    margin-bottom: 10px;
+}
+.description p{
+    color: #040404;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style: oblique;
+}
+.features h3{
+    color: #090909;
+    text-shadow: #21cfdf 0 3px 6px;
+    margin-bottom: 10px;
+}
+.features ul li i{
+    color: #0e0e0e;
+    margin-right: 8px;
+    font-size: 14px;
+    text-shadow: #df6a21 0 3px 6px;
+}
+
+/* Inquiry Form */
+.inquiry h3{
+    color: #090909;
+    text-shadow: #21cfdf 0 3px 6px;
+    padding: 10px;
+}
+
+.inquiry-form input, .inquiry-form textarea {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #12eef6;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.inquiry-form button {
+    background-color: #101010;
+    color: rgba(10, 206, 240, 0.875);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.inquiry-form button:hover{
+    background-color: #07e9e9;
+    color:#040404;
 }
