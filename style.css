@@ -16,12 +16,36 @@
     text-align: center;
     border-radius: 5px;
 }
+.header h1{
+    color: #00f7ff;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nav1{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color:aliceblue;
+    transition: color 0.3s;
+}
+
+.nav1 a:hover{
+    color:rgb(137, 197, 250)
+}
     
 .login-box{
     background-color: rgba(74, 184, 184, 0.089);
     width: 300px;
-    height: 250px;
+    height: 280px;
     margin:auto;
+    margin-top: 50px;
     border-radius: 10px;
     box-shadow: 3px 3px 6px black;
 }
@@ -29,22 +53,27 @@
     padding: 5px;
     border: 2;
     border-radius: 5px;
+    outline: none;
 }
 .register-box{
     background-color: rgba(74, 184, 184, 0.089);
     width: 300px;
-    height: 300px;
+    height: 320px;
     margin:auto;
     border-radius: 10px;
+    margin-top: 50px;
     box-shadow: 3px 3px 6px black;
 }
 .register-form input{
     padding: 5px;
     border: 2;
     border-radius: 5px;
+    outline: none;
 }
 .btn{
     padding: 8px;
+    outline: none;
+    border: none;
     border-radius: 10px;
 }
 .btn:hover{
@@ -79,6 +108,13 @@
     text-decoration: none;
     color:aliceblue;
     transition: color 0.3s;
+}
+
+#greeting{
+    color: #00f7ff;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
 }
 
 .nav-links a:hover{
@@ -269,7 +305,10 @@
     object-fit: cover;
     border-radius: 15px;
     height: 300px;
-    border: 2px solid black;
+    border-top: 2px solid rgb(5, 228, 244);
+    border-bottom: 2px solid rgb(9, 9, 9);
+    border-right: 2px solid rgb(7, 206, 246);
+    border-left: 2px solid rgb(9, 9, 9);
 }
 
 .prev, .next {
