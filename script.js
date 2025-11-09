@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       registerForm.reset();
 
       setTimeout(() => {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
       }, 2000);
     });
   }
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loginform.reset();
             localStorage.setItem("currentUser", JSON.stringify(storedUser));
             setTimeout(function() {
-                window.location.href = "index.html";
+                window.location.href = "home.html";
             }, 2000);
 
         }else{
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             message.style.color="red";
             return;
         }
-        });
+      });
     }
 
     const logoutlink=document.getElementById("logoutlink");
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logoutlink.addEventListener("click", function(e){
             e.preventDefault();
             localStorage.removeItem("currentUser");
-            window.location.href="login.html";
+            window.location.href="index.html";
         });
     };
 
