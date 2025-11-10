@@ -114,4 +114,4 @@ setInterval(() => {
     index++;
     if(index >= total) index = 0;
     updateSlider();
-}, 5000);
+}, 4000);
